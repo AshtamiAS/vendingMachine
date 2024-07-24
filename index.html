@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Items and Quantities with Buttons</title>
+<link rel="stylesheet" href="shoppingstyle.css">
+</head>
+<body>
+    <div class="header">
+        <h1>QUICK FOOD</h1>
+    </div>
+
+    <div class="amount-input">
+        <label for="userAmount">Your Amount:</label>
+        <input type="number" id="userAmount" name="userAmount" min="0" required>
+        <button id="confirmAmount">Confirm Amount</button>
+    </div>
+    <div class="container">
+        <div class="item" data-item-id="1">
+            <div class="item-content">
+                <img src="kitkat.png" alt="kitkat">
+                <div class="name"> Product Name: kitkat</div>
+                <div class="quantity">Quantity: 10</div>
+                <div class="price">Price: 50</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="2">
+            <div class="item-content">
+                <img src="cookies.png" alt="cookies">
+                <div class="name"> Product Name: cookies</div>
+                <div class="quantity">Quantity: 7</div>
+                <div class="price">Price: 100</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="3">
+            <div class="item-content">
+                <img src="chocolate-bar.png" alt="chocolate-bar">
+                <div class="name"> Product Name: chocolate-bar</div>
+                <div class="quantity">Quantity: 8</div>
+                <div class="price">Price: 25</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="4">
+            <div class="item-content">
+                <img src="snikers.png" alt="snikers">
+                <div class="name"> Product Name: snikers</div>
+                <div class="quantity">Quantity: 8</div>
+                <div class="price">Price: 45</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="5">
+            <div class="item-content">
+                <img src="Sprite.png" alt="Sprite">
+                <div class="name"> Product Name: sprite</div>
+                <div class="quantity">Quantity: 10</div>
+                <div class="price">Price: 45</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="6">
+            <div class="item-content">
+                <img src="peanut-butter.png" alt="peanut-butter">
+                <div class="name"> Product Name: peanut-butter</div>
+                <div class="quantity">Quantity: 8</div>
+                <div class="price">Price: 150</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="7">
+            <div class="item-content">
+                <img src="pepsi.png" alt="pepsi">
+                <div class="name"> Product Name: pepsi</div>
+                <div class="quantity">Quantity: 8</div>
+                <div class="price">Price: 50</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item" data-item-id="8">
+            <div class="item-content">
+                <img src="juice.png" alt="juice">
+                <div class="name"> Product Name: fresh-juice</div>
+                <div class="quantity">Quantity: 4</div>
+                <div class="price">Price: 40</div>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="popup-form" id="popupForm">
+        <div class="form-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" name="productName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productQuantity">Quantity Available:</label>
+                    <input type="text" id="productQuantity" name="productQuantity" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Price:</label>
+                    <input type="text" id="productPrice" name="productPrice" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="numberOfItems">Number of Items:</label>
+                    <input type="number" id="numberOfItems" name="numberOfItems" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="totalPrice">Total Price:</label>
+                    <input type="text" id="totalPrice" name="totalPrice" readonly>
+                </div>
+                <button type="submit">BUY</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="shopping.js"></script>
+</body>
+</html>
