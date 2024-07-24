@@ -1,6 +1,4 @@
-Sure, here is a README.md for your vending machine project:
 
-```markdown
 # Vending Machine
 
 This project is a simple vending machine application built using HTML, CSS, and JavaScript. It allows users to select products, add them to a cart, and generate a bill with the total cost and balance amount.
@@ -73,6 +71,3 @@ Contributions are welcome! Please follow these steps to contribute:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
-
-Feel free to adjust the content as needed to better match your project.
